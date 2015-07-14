@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="black_50">#80000000</color>
+    <color name="black_30">#4d000000</color>
+    <color name="toast_black_50">#80f44d6c</color>
+    <color name="main_mark_20">#33f44d6c</color>
+    <color name="white">#ffffff</color>
+    <color name="white_50">#80ffffff</color>
+    <color name="white_15">#26ffffff</color>
+    <!-- 淡灰色 -->
+    <color name="gray">#ebebeb</color>
+    <color name="gainsboro">#f8f8f8</color>
+    <color name="gainsboro_">#f0f0f0</color>
+    <!-- 灰色 -->
+    <color name="corner">#e2e2e2</color>
+    <color name="corner_45">#eeeeee</color>
+    <color name="corner_45_40">#66eeeeee</color>
+    <color name="darkgrey">#ff404040</color>
+    <!-- 粉色 -->
+    <color name="hotpink">#ff82ab</color>
+    <!-- 中粉紫色 -->
+    <color name="deeppink">#ff498c</color>
+    <color name="head_back">#f16781</color>
+    <color name="head_back_50">#80f16781</color>
+    <color name="transparent">#00000000</color>
+    <color name="tab_gray">#333333</color>
+    <color name="content_gray">#8d8d8d</color>
+    <color name="red">#ff0000</color>
+    <!-- 首页 -->
+    <color name="main_rund">#dfdfdf</color>
+    <color name="main_value">#8a8a8a</color>
+    <!-- 菜单 -->
+    <color name="menu_drivice">#20ffffff</color>
+    <color name="menu_content">#60ffffff</color>
+    <color name="menu_head_round">#60ffffff</color>
+    <!-- 添加妆品 -->
+    <color name="add_remind">#9a9a9a</color>
+    <!-- 二维码扫描 -->
+    <color name="viewfinder_frame">#929292</color>
+    <color name="viewfinder_laser">#fe5600</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <!-- 过期提醒 -->
+    <color name="remind_dirvce_bg">#fff9ec</color>
+    <color name="remind_dirvce_title">#704a00</color>
+    <!-- 保存成功 -->
+    <color name="sucess_back_btn">#f5c356</color>
+    <color name="sucess_back_btn_70">#b3f5c356</color>
+    <color name="sucess_con_btn_70">#b3ff4666</color>
+    <!-- 完善资料 -->
+    <color name="userinfo_bg">#fffcf5</color>
+    <color name="new_share_type">#535353</color>
+    <color name="user_fuzhi_one">#f1d599</color>
+    <color name="user_fuzhi_two">#ffbec9</color>
+    <color name="user_fuzhi_three">#cce38c</color>
+    <color name="user_fuzhi_four">#d9bed5</color>
+    <!-- 账单分析 -->
+    <color name="analyze_text_percent_color">#727272</color>
+    <!-- 产品管理 -->
+    <color name="group_layout_bg">#ebe6ff</color>
+    <color name="main_dirvice">#f2f2f2</color>
+    <color name="group_hufu_bg">#fff2ca</color>
+    <color name="group_caizhuang_bg">#ffe3f7</color>
+    <color name="group_xihu_bg">#ccffd8</color>
+    <color name="group_shenti_bg">#cef5fe</color>
+    <color name="main_bar">#ff4666</color>
+    <color name="main_bar_50">#80ff4666</color>
+    <color name="main_bar_30">#4dff4666</color>
+    <color name="main_bar_80">#b3ff4666</color>
+
+    <!-- 脂肪秤 -->
+    <color name="balance_achart_yellow">#e3ff1e</color>
+    <color name="balance_circle_write_transparent">#26ffffff</color>
+
+    <!-- 评论 -->
+    <color name="emoji_input_textcolor">#bbbbbb</color>
+    <!-- 浅红色 -->
+    <color name="small_red">#ff7089</color>
+    <color name="small_red_80">#b3ff7089</color>
+    <!-- 全部作品 -->
+    <color name="bg_desc_text">#f6f6f6</color>
+    <!-- 微信支付的绿色 -->
+    <color name="bg_wechat">#21d028</color>
+    <color name="bg_wechat_70">#b321d028</color>
+    <!-- 支付宝的橘色 -->
+    <color name="bg_alipay">#fc552d</color>
+    <color name="bg_alipay_70">#b3fc552d</color>
+    <!-- qq登录的蓝色 -->
+    <color name="bg_qq_login">#2c94d1</color>
+    <color name="bg_qq_login_70">#b32c94d1</color>
+    <!-- 提现金额 -->
+    <color name="bg_detail_text">#3fc331</color>
+
+    <color name="sign_red">#ff4666</color>
+    <color name="reveal_color">#1b000000</color>
+    <color name="black_overlay">#66000000</color>
+    
+    <!-- 萤石 -->
+    <color name="application_bg">@color/common_bg</color>
+    <color name="common_bg">#f0f0f3</color>
+    <color name="auto_wifi_blue">#40a2ee</color>
+    <color name="auto_wifi_red">#fe4343</color>
+    <color name="gray_text">#adadad</color>
+    <color name="auto_blue_text">#2554bd</color>
+
+</resources>

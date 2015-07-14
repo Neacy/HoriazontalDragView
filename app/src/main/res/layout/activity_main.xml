@@ -1,0 +1,26 @@
+<neacy.horiazontaldragview.HorizontalDragLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                xmlns:tools="http://schemas.android.com/tools"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="horizontal"
+                                                tools:context=".MainActivity">
+
+    <TextView
+        android:id="@id/drag_content"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/bg_wechat"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:text="@string/hello_world"/>
+
+    <TextView
+        android:id="@id/drag_action"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/main_bar"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:text="Delete"/>
+
+</neacy.horiazontaldragview.HorizontalDragLayout>

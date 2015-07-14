@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 定义滑动删除的两个view -->
+
+    <item name="drag_content" type="id"/>
+    <item name="drag_action" type="id"/>
+</resources>
