@@ -21,6 +21,8 @@ public class HorizontalDragLayout extends LinearLayout {
     private View mContentView;
     private View mDeleteView;
     private ViewDragHelper mDragHlper;
+    /**--- min scroll velocity ---*/
+    private int minVelocity = 600;
 
     private Point point;
 
@@ -60,13 +62,17 @@ public class HorizontalDragLayout extends LinearLayout {
         @Override
         public int clampViewPositionHorizontal(View child, int left, int dx) {
             Log.w(TAG, "clampViewPositionHorizontal = " + left + "/" + dx);
-            int realLeft = left;
+            int realLeft = 0;
             if (child == mContentView) {
                 if (left > 0) {// right scroll
-                    realLeft = left > mDeleteView.getWidth() ? mDeleteView.getWidth() : left;
+                    realLeft = 0;
                 } else if (left < 0) {// left scroll
                     realLeft = Math.abs(left) > mDeleteView.getWidth() ? -mDeleteView.getWidth() : left;
                 }
+            } else {
+                int maxleft = mContentView.getWidth() ;
+                realLeft = Math.abs(left) > maxleft ? maxleft : left;
+                realLeft = Math.max(realLeft, mContentView.getWidth() - mDeleteView.getWidth());
             }
             return realLeft;
         }
@@ -77,12 +83,17 @@ public class HorizontalDragLayout extends LinearLayout {
             Log.w(TAG, "--- scroll finish when finger up ---");
             Log.w(TAG, "onViewReleased = " + xvel + "/" + yvel);
             if (releasedChild == mContentView) {
-                if (xvel > 0) {
+                if (xvel > minVelocity) {
                     mDragHlper.settleCapturedViewAt(point.x, point.y);
-                } else {
+                } else if (xvel <= -minVelocity) {
                     mDragHlper.settleCapturedViewAt(point.x - mDeleteView.getWidth(), point.y);
                 }
                 invalidate();
+            } else {
+                if (xvel > minVelocity) {
+                    mDragHlper.smoothSlideViewTo(mContentView, 0, 0);
+                    invalidate();
+                }
             }
         }
 
@@ -96,6 +107,19 @@ public class HorizontalDragLayout extends LinearLayout {
                 mContentView.offsetLeftAndRight(dx);
             }
             invalidate();
+        }
+
+        @Override
+        public int getViewHorizontalDragRange(View child)
+        {
+            // must override when set mDeleteView clickable true;
+            return child.getWidth();
+        }
+
+        @Override
+        public int getViewVerticalDragRange(View child)
+        {
+            return child.getWidth();
         }
     }
 
