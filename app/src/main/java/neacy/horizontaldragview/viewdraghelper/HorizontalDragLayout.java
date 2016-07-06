@@ -1,4 +1,4 @@
-package neacy.horiazontaldragview;
+package neacy.horizontaldragview.viewdraghelper;
 
 import android.content.Context;
 import android.graphics.Point;
@@ -10,8 +10,11 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import neacy.horiazontaldragview.R;
+
 /**
- * an Horizontal Scroll View like IOS.QQ scroll to choice delete.
+ * an Horizontal Scroll View like QQ scroll to choice delete.
+ * code by ViewDragHelper.
  * Created by jayuchou on 15/7/14.
  */
 public class HorizontalDragLayout extends LinearLayout {
