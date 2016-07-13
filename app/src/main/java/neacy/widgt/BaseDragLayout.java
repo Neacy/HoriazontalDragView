@@ -1,9 +1,11 @@
-package neacy.horizontaldragview;
+package neacy.widgt;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
+
+import neacy.horiazontaldragview.R;
 
 /**
  * ViewGroup布局和测绘,我们暂时只提供两个View供操作.
@@ -20,6 +22,9 @@ public class BaseDragLayout extends ViewGroup {
     }
 
     public int mDragMaxWidth;// 滑动的最大距离等于右边出现的控件宽度
+
+    public View mContentView;// 内容view
+    public View mDeleteView;// 菜单view
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
@@ -44,6 +49,14 @@ public class BaseDragLayout extends ViewGroup {
             view.layout(left, 0, left + view.getMeasuredWidth(), view.getMeasuredHeight());
             left += view.getMeasuredWidth();
         }
+    }
+
+    @Override
+    protected void onFinishInflate() {
+        super.onFinishInflate();
+        // 暂时没有考虑那么多
+        mContentView = findViewById(R.id.drag_content);
+        mDeleteView = findViewById(R.id.drag_action);
     }
 
     @Override

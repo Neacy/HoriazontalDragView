@@ -1,4 +1,4 @@
-package neacy.horizontaldragview;
+package neacy.widgt;
 
 import android.content.Context;
 import android.util.AttributeSet;
