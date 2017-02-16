@@ -4,28 +4,30 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <!--<neacy.widgt.HorizontalNestedScrollLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content">-->
+    <neacy.widgt.HorizontalNestScollParent
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-        <!--<Button-->
-            <!--android:id="@id/drag_content"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="100dp"-->
-            <!--android:background="@color/bg_wechat"-->
-            <!--android:gravity="center"-->
-            <!--android:text="NestedScroll->向左滑动看看"-->
-            <!--android:textColor="@android:color/white"/>-->
+        <neacy.widgt.HorizontalNestScrollChild
+            android:id="@id/drag_content"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/bg_wechat"
+            android:gravity="center"
+            android:text="NestScrolling->向左滑动看看"
+            android:textColor="@android:color/white"/>
 
-        <!--<Button-->
-            <!--android:id="@id/drag_action"-->
-            <!--android:layout_width="100dp"-->
-            <!--android:layout_height="100dp"-->
-            <!--android:background="@color/main_bar"-->
-            <!--android:gravity="center"-->
-            <!--android:text="删除"-->
-            <!--android:textColor="@android:color/white"/>-->
-    <!--</neacy.widgt.HorizontalNestedScrollLayout>-->
+        <Button
+            android:id="@id/drag_action"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/main_bar"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@android:color/white"/>
+
+    </neacy.widgt.HorizontalNestScollParent>
 
     <neacy.widgt.HorizontalDragLayout
         android:layout_width="match_parent"
