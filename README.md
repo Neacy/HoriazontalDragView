@@ -4,4 +4,4 @@
 
 
 #截图效果
-<img src="./imgage/horizontal.png" width="270" height="486">
+<img src="./image/horizontal.png" width="270" height="486">
