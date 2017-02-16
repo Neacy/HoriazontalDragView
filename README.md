@@ -1,7 +1,7 @@
 # HoriazontalDragView
 
-an Horizontal Scroll View like IOS.QQ use ViewDragHelper for scroll to choice delete
+分别采用手势分发、ViewDragHelper、NestedScrolling来实现类似QQ的滑动删除效果.
 
-this is finish result:
 
-![github](https://github.com/Neacy/HoriazontalDragView/tree/master/image/HorizontalDragView.gif "github") 
+#截图效果
+<img src="./img/horizontal.png" width="270" height="486">

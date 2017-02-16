@@ -14,6 +14,7 @@ import neacy.horiazontaldragview.R;
 
 /**
  * NestedScrollParent
+ * 参考博客:http://blog.csdn.net/al4fun/article/details/53888990
  * Created by jayuchou on 17/2/16.
  */
 public class HorizontalNestScollParent extends LinearLayout implements NestedScrollingParent {

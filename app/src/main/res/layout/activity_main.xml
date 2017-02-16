@@ -15,7 +15,7 @@
             android:layout_height="100dp"
             android:background="@color/bg_wechat"
             android:gravity="center"
-            android:text="NestScrolling->向左滑动看看"
+            android:text="NESTEDSCROLLING->向左滑动看看"
             android:textColor="@android:color/white"/>
 
         <Button

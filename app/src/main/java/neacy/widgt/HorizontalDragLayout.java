@@ -11,6 +11,9 @@ import android.view.ViewConfiguration;
 
 /**
  * 模仿QQ滑动提示删除,采用ViewDragHelper实现.
+ * 参考博客:
+ * 1.http://wuxiaolong.me/2015/12/04/ViewDragHelper/
+ * 2.http://blog.csdn.net/lzyzsd/article/details/41492783
  * Created by jayuchou on 15/7/14.
  */
 public class HorizontalDragLayout extends BaseDragLayout {
